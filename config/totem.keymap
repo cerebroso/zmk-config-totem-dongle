@@ -33,6 +33,18 @@
 };
 
 / {
+    macros {
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp DQT &kp SPACE>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -45,10 +57,7 @@
         combo_quote {
           timeout-ms = <50>;
           key-positions = <16 17>;
-          bindings = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp DQT &kp SPACE>
-                , <&macro_release &kp LSHFT>
-                ;
+          bindings = <&double_quote>;
         };
     };
 
