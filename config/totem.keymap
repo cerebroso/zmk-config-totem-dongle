@@ -56,7 +56,7 @@
 
         combo_quote {
           timeout-ms = <50>;
-          key-positions = <16 17>;
+          key-positions = <28 29>;
           bindings = <&double_quote>;
         };
     };
