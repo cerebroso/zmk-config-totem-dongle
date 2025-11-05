@@ -106,9 +106,9 @@
 
             bindings = <
         &kp Q       &kp W       &kp F        &kp D        &kp K        &kp J    &kp U        &kp R        &kp L       &kp SEMICOLON
-        &kp A       &kp S       &kp E        &kp T        &kp G        &kp Y    &kp N  &kp I  &kp O  &kp H
+        &kp A       &kp S       &kp E        &kp T        &kp G        &kp Y    &kp N        &kp I  &kp O  &kp H
 &kp LGUI   &mt LSHIFT Z       &kp X       &kp C        &kp V        &kp B        &kp P    &kp M        &kp COMMA    &kp DOT     &mt LSHIFT SLASH       &kp LALT
-                                &kp LCTRL      &kp SPACE  &lt NAVI ESC    &lt SYM F1   &kp RET    &mt RIGHT_CONTROL DOUBLE_QUOTES
+                                &kp LCTRL      &kp SPACE  &lt NAVI ESC    &lt SYM F1   &kp RET    &mt RIGHT_CONTROL, DOUBLE_QUOTES
             >;
         };
 
