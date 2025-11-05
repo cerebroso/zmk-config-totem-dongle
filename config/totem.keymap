@@ -105,10 +105,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
-        &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp Q   &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
-                                &kp DEL      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+        &kp Q       &kp W       &kp F        &kp D        &kp K        &kp J    &kp U        &kp R        &kp L       &kp SEMICOLON
+        &kp A       &kp S       &kp E        &kp T        &kp G        &kp Y    &kp N  &kp I  &kp O  &kp H
+&kp LGUI   &mt LSHIFT Z       &kp X       &kp C        &kp V        &kp B        &kp P    &kp M        &kp COMMA    &kp DOT     &mt LSHIFT SLASH       &kp LALT
+                                &kp LCTRL      &kp SPACE  &lt NAVI ESC    &lt SYM F1 &kp RET  &mt RCTRL DQT
             >;
         };
 
@@ -131,10 +131,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &trans
+        &kp LS(GRAVE)     &kp F2      &kp F3    &kp F4     &kp F5           &trans  &kp KP_ASTERISK  &kp KP_PLUS  &kp LS(BACKSLASH)  &kp LS(N7)
+        &kp LS(N1) &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp PG_UP  &kp EQUAL  &kp LS(MINUS)  &kp MINUS  &kp LS(N1)
+&trans  &transL    &trans   &trans  &trans  &trans                   &kp PG_DN  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
+                            &kp LC(BACKSPACE) &kp BACKSPACE &trans   &mo ADJ   &kp DEL  &trans
             >;
         };
 
@@ -157,10 +157,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &trans    &mo ADJ      &trans        &kp C_PP        &trans
+        &kp TAB    &kp LS(N2)   &kp LBRC  &kp RBRC   &trans         &trans     &trans      &trans   &kp F11     &kp F12
+        &kp a_tilde    &trans   &kp LS(LBRC)  &kp LS(RBRC) &kp HOME   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+&kp tilde_space  &trans  &kp LS(N9)  &kp RA(COMMA)     &kp LS(N0)    &kp END       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &trans &to NUMPAD
+                                  &kp LC(BACKSPACE) &kp BACKSPACE  &mo ADJ      &trans        &kp C_PP        &trans
             >;
         };
 
@@ -183,9 +183,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &sys_reset  &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &mkp LCLK  &trans &mkp LCLK &kp F12
-                &bootloader &bt BT_NXT  &msc SCRL_UP  &trans  &trans    &trans  &trans &mmv MOVE_UP &trans  &kp F11
-&studio_unlock  &trans      &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &kp F10  &trans
+                &kp N1  &kp N2  &kp N3 &kp N4 &kp N5    &kp N6  &kp N7  &kp N8 &kp N9 &kp N0
+                &kp GRAVE &kp LA(LG(LEFT_ARROW))  &msc SCRL_UP  &kp LA(LG(RIGHT_ARROW))  &kp C_AL_FILE_BROWSER    &trans  &mkp LCLK &mmv MOVE_UP &mkp RCLK  &trans
+&studio_unlock  &trans      &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp C_AC_HOME    &kp PRINTSCREEN  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &caps_word
                                         &trans        &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -193,10 +193,10 @@
         mouse_layer {
           label = "NUMPAD";
           bindings = <
-          &trans  &trans  &trans       &trans  &trans    &trans  &mkp LCLK  &mmv MOVE_UP &mkp LCLK  &trans
-          &trans  &trans  &msc SCRL_UP &trans  &trans    &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans
-  &trans  &trans  &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &trans  &trans       &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+          &trans  &trans  &trans &trans  &trans    &trans  &kp N7  &kp N8 &kp N9  &trans
+          &trans  &trans  &trans &trans  &trans    &trans  &kp N4  &kp N5 &kp N6  &trans
+  &trans  &trans  &trans  &trans &trans  &trans    &trans  &kp N1  &kp N2 &kp N3  &trans  &trans
+                                &trans  &trans  &to BASE    &trans  &kp N0  &kp PERIOD
             >;
         };
     };
