@@ -108,7 +108,7 @@
         &kp Q  &kp W  &kp F  &kp D  &kp K        &kp J  &kp U  &kp R  &kp L  &kp SEMICOLON
         &kp A  &kp S  &kp E  &kp T  &kp G        &kp Y  &kp N  &kp I  &kp O  &kp H
 &kp LGUI  &mt LSHFT Z  &kp X &kp C &kp V        &kp B  &kp P  &kp M  &kp COMMA &kp DOT &mt RSHFT SLASH &kp LALT
-                  &kp LCTRL &kp SPACE  &trans   &trans  &trans  &trans
+                  &kp LCTRL &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &mt RCTRL DQT
             >;
         };
 
