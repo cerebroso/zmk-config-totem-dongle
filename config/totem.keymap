@@ -24,6 +24,7 @@
 #define SYM  2
 #define ADJ  3
 #define NUMPAD 4
+#define MOUSE 5
 
 &mt {
     quick-tap-ms = <100>;
@@ -75,6 +76,12 @@
           key-positions = <28 29>;
           bindings = <&double_quote>;
         };
+
+        combo_mouse {
+          timeout-ms = <50>;
+          key-positions = <32 37>;
+          bindings = <&mo MOUSE>;
+        };
     };
 
     keymap {
@@ -102,7 +109,7 @@
         &kp Q  &kp W  &kp F  &kp D  &kp K        &kp J  &kp U  &kp R  &kp L  &kp SEMICOLON
         &kp A  &kp S  &kp E  &kp T  &kp G        &kp Y  &kp N  &kp I  &kp O  &kp H
 &kp LGUI  &mt LSHFT Z  &kp X &kp C &kp V        &kp B  &kp P  &kp M  &kp COMMA &kp DOT &mt RSHFT SLASH &kp LALT
-                  &kp LCTRL &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &mt RCTRL DQT
+                  &kp LCTRL &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &mt RCTRL SQT
             >;
         };
 
@@ -151,8 +158,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp TAB    &kp LS(N2)   &kp LBRC  &kp RBRC   &trans         &trans     &trans      &trans   &kp F11     &kp F12
-        &a_tilde    &trans   &kp LS(LBRC)  &kp LS(RBRC) &kp HOME   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+        &kp TAB    &kp LS(N2)   &kp LBKT  &kp RBKT  &trans         &trans     &trans      &trans   &kp F11     &kp F12
+        &a_tilde    &trans   &kp LBRC  &kp RBRC &kp HOME   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
 &tilde_space  &trans  &kp LS(N9)  &kp RA(COMMA)     &kp LS(N0)    &kp END       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &trans &to NUMPAD
                                   &kp LC(BACKSPACE) &kp BACKSPACE  &mo ADJ      &trans        &kp C_PP        &trans
             >;
@@ -177,20 +184,30 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp N1  &kp N2  &kp N3 &kp N4 &kp N5    &kp N6  &kp N7  &kp N8 &kp N9 &kp N0
-                &kp GRAVE &kp LA(LG(LEFT_ARROW))  &msc SCRL_UP  &kp LA(LG(RIGHT_ARROW))  &kp C_AL_FILE_BROWSER    &trans  &mkp LCLK &mmv MOVE_UP &mkp RCLK  &trans
-&studio_unlock  &trans      &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp C_AC_HOME    &kp PRINTSCREEN  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &caps_word
+                &kp GRAVE &trans  &trans  &trans  &kp C_AL_FILE_BROWSER    &trans  &trans &trans &trans  &trans
+                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp N6  &kp N7  &kp N8 &kp N9 &kp N0
+&studio_unlock  &trans  &kp LA(LG(LEFT_ARROW))  &trans  &kp LA(LG(RIGHT_ARROW))  &kp C_AC_HOME    &kp PRINTSCREEN  &trans &trans &trans &trans  &caps_word
                                         &trans        &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        mouse_layer {
+        numpad_layer {
           label = "NUMPAD";
           bindings = <
           &trans  &trans  &trans &trans  &trans    &trans  &kp N7  &kp N8 &kp N9  &trans
           &trans  &trans  &trans &trans  &trans    &trans  &kp N4  &kp N5 &kp N6  &trans
   &trans  &trans  &trans  &trans &trans  &trans    &trans  &kp N1  &kp N2 &kp N3  &trans  &trans
                                 &trans  &trans  &to BASE    &trans  &kp N0  &kp PERIOD
+            >;
+        };
+
+        mouse_layer {
+          label = "MOUSE";
+          bindings = <
+          &trans  &trans         &msc SCRL_UP    &trans           &trans    &trans  &mkp LCLK &mmv MOVE_UP &mkp RCLK  &trans
+          &trans  &msc SCRL_LEFT &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans
+  &trans  &trans  &trans         &trans          &trans           &trans    &trans  &trans  &mmv MCLK &trans  &trans  &trans
+                                 &trans  &trans  &trans           &trans    &trans  &trans
             >;
         };
     };
