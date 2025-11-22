@@ -36,7 +36,7 @@
 &lt {
     tapping-term-ms = <130>;
     flavor = "hold-preferred";
-}
+};
 
 / {
     behaviors {
