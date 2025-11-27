@@ -30,7 +30,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "balanced";
-    tapping-term-ms = <130>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
@@ -117,6 +117,18 @@
           timeout-ms = <50>;
           key-positions = <13 16>;
           bindings = <&kp TAB>;
+        };
+
+        combo_lctrl {
+          timeout-ms = <50>;
+          key-positions = <12 13>;
+          bindings = <&kp LCTRL>;
+        };
+
+        combo_rctrl {
+          timeout-ms = <50>;
+          key-positions = <16 17>;
+          bindings = <&kp RCTRL>;
         };
     };
 
