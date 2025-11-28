@@ -121,13 +121,13 @@
 
         combo_lctrl {
           timeout-ms = <50>;
-          key-positions = <12 13>;
+          key-positions = <23 24>;
           bindings = <&kp LCTRL>;
         };
 
         combo_rctrl {
           timeout-ms = <50>;
-          key-positions = <16 17>;
+          key-positions = <27 28>;
           bindings = <&kp RCTRL>;
         };
     };
@@ -156,8 +156,8 @@
             bindings = <
         &kp Q  &kp W  &kp F  &kp D  &kp K        &kp J  &kp U  &kp R  &kp L  &kp SEMICOLON
         &kp A  &kp S  &kp E  &kp T  &kp G        &kp Y  &kp N  &kp I  &kp O  &kp H
-&kp LGUI  &hml LSHFT Z  &kp X &kp C &kp V        &kp B  &kp P  &kp M  &kp COMMA &kp DOT &hmr RSHFT SLASH &kp LALT
-                  &kp LCTRL &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &mt RCTRL SQT
+&kp LALT  &hml LSHFT Z  &kp X &kp C &kp V        &kp B  &kp P  &kp M  &kp COMMA &kp DOT &hmr RSHFT SLASH &kp GRAVE
+                  &kp LGUI &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &kp SQT
             >;
         };
 
@@ -207,7 +207,7 @@
 
             bindings = <
         &kp TAB    &kp LS(N2)   &kp LBKT  &kp RBKT  &trans         &trans     &trans      &trans   &kp F11     &kp F12
-        &a_tilde    &trans   &kp LBRC  &kp RBRC &kp HOME   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
+        &a_tilde    &kp LS(N3)   &kp LBRC  &kp RBRC &kp HOME   &kp LS(N6)   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
 &tilde_space  &trans  &kp LS(N9)  &kp RA(COMMA)     &kp LS(N0)    &kp END       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &trans &to NUMPAD
                                   &kp LC(BACKSPACE) &kp BACKSPACE  &mo ADJ      &trans        &kp C_PP        &trans
             >;
