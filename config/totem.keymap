@@ -118,18 +118,6 @@
           key-positions = <13 16>;
           bindings = <&kp TAB>;
         };
-
-        combo_lctrl {
-          timeout-ms = <50>;
-          key-positions = <23 24>;
-          bindings = <&kp LCTRL>;
-        };
-
-        combo_rctrl {
-          timeout-ms = <50>;
-          key-positions = <27 28>;
-          bindings = <&kp RCTRL>;
-        };
     };
 
     keymap {
@@ -155,9 +143,9 @@
 
             bindings = <
         &kp Q  &kp W  &kp F  &kp D  &kp K        &kp J  &kp U  &kp R  &kp L  &kp SEMICOLON
-        &kp A  &kp S  &kp E  &kp T  &kp G        &kp Y  &kp N  &kp I  &kp O  &kp H
+        &kp A  &kp S  &kp E  &hml LCTRL T  &kp G        &kp Y  &hmr RCTRL N  &kp I  &kp O  &kp H
 &kp LALT  &hml LSHFT Z  &kp X &kp C &kp V        &kp B  &kp P  &kp M  &kp COMMA &kp DOT &hmr RSHFT SLASH &kp GRAVE
-                  &kp LGUI &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &kp SQT
+                  &mt TAB LGUI &kp SPACE  &lt NAV ESC    &lt SYM F1 &kp RET  &kp SQT
             >;
         };
 
