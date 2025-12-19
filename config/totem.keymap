@@ -62,6 +62,7 @@
             bindings = <&kp>, <&kp>;
             hold-while-undecided;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25 32 33 34 35>; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
         };
     };
 
