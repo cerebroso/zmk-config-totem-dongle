@@ -108,28 +108,10 @@
           bindings = <&double_quote>;
         };
 
-        combo_lcsft {
-          timeout-ms = <50>;
-          key-positions = <12 13>;
-          bindings = <&kp LS(LCTRL)>;
-        };
-
-        combo_rcsft {
-          timeout-ms = <50>;
-          key-positions = <16 17>;
-          bindings = <&kp RS(RCTRL)>;
-        };
-
         combo_mouse {
           timeout-ms = <50>;
           key-positions = <32 37>;
           bindings = <&mo MOUSE>;
-        };
-
-        combo_tab {
-          timeout-ms = <50>;
-          key-positions = <13 16>;
-          bindings = <&kp TAB>;
         };
     };
 
