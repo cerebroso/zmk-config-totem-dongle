@@ -108,6 +108,12 @@
           bindings = <&double_quote>;
         };
 
+        combo_slash {
+          timeout-ms = <50>;
+          key-positions = <27 28>;
+          bindings = <&kp SLASH>;
+        };
+
         combo_mouse {
           timeout-ms = <50>;
           key-positions = <32 37>;
@@ -137,9 +143,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp B  &kp Y  &kp D         &kp L         &kp SQT  &kp Q      &kp F  &kp O  &kp U  &kp SEMICOLON
+          &kp B  &kp Y  &kp D         &kp L         &kp MINUS  &kp Q      &kp F  &kp O  &kp U  &kp SEMICOLON
           &kp C  &kp S  &hml LCTRL T  &hml LSHFT R  &kp X    &kp J      &hmr LSHFT N  &hmr RCTRL A  &kp I     &kp H
-&kp LALT  &kp V  &kp W  &kp G         &kp M         &kp Z    &kp MINUS  &kp P         &kp DOT       &kp COMMA &kp K &kp SLASH
+&kp LALT  &kp V  &kp W  &kp G         &kp M         &kp Z    &kp SQT  &kp P         &kp DOT       &kp COMMA &kp K &kp SLASH
                   &mt LGUI TAB &kp SPACE  &lt NAV ESC        &lt SYM F1 &kp E  &kp RET
             >;
         };
@@ -245,7 +251,7 @@
         game_layer {
             label = "GAME";
             bindings = <
-        &kp B  &kp Y  &kp D  &kp L     &kp SQT      &kp Q      &kp F  &kp O   &kp U     &kp SEMICOLON
+        &kp B  &kp Y  &kp D  &kp L     &kp Q      &kp Q      &kp F  &kp O   &kp U     &kp SEMICOLON
         &kp C  &kp S  &kp T  &kp R     &kp X        &kp J      &kp N  &kp A   &kp I     &kp H
 &kp TAB &kp V  &kp W  &kp G  &kp M     &kp Z        &kp MINUS  &kp P  &kp DOT &kp COMMA &kp K &to BASE
                   &kp LCTRL  &kp SPACE &lt NAV ESC  &lt SYM F1 &kp E  &kp RET
