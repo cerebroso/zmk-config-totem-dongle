@@ -145,7 +145,7 @@
             bindings = <
           &kp B  &kp Y  &kp D         &kp L         &kp MINUS  &kp Q      &kp F  &kp O  &kp U  &kp SEMICOLON
           &kp C  &kp S  &hml LCTRL T  &hml LSHFT R  &kp X    &kp J      &hmr LSHFT N  &hmr RCTRL A  &kp I     &kp H
-&kp LALT  &kp V  &kp W  &kp G         &kp M         &kp Z    &kp SQT  &kp P         &kp DOT       &kp COMMA &kp K &kp SLASH
+&kp LALT  &kp V  &kp W  &kp G         &kp M         &kp Z    &kp SQT  &kp P         &kp COMMA       &kp DOT &kp K &kp SLASH
                   &mt LGUI TAB &kp SPACE  &lt NAV ESC        &lt SYM F1 &kp E  &kp RET
             >;
         };
